@@ -1,0 +1,103 @@
+/* 
+Theme Name: Childtheme
+Author: Danish Aman
+
+*/
+
+
+#first_name {
+    background-color: #4caf50;
+}
+
+    /* Form container */
+    #frmContactUs {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+    }
+
+    /* Form labels */
+    #frmContactUs label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    /* Form inputs */
+    #frmContactUs input[type="text"],
+    #frmContactUs input[type="email"],
+    #frmContactUs input[type="phoneno"],
+    #frmContactUs textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    /* Submit button */
+    #frmContactUs input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* Optional: Style for update and delete buttons */
+    #frmContactUs input[type="submit"][name="update"],
+    #frmContactUs input[type="submit"][name="delete"] {
+        background-color: #ffc107;
+    }
+
+
+
+body {
+    background: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #ContactUs label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #ContactUs input[type="text"],
+    #ContactUs input[type="email"],
+    #ContactUs textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    #ContactUs input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    #ContactUs input[type="submit"]:hover {
+        background-color: #45a049;
+    }
