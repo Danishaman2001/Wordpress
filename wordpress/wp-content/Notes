@@ -1,0 +1,28 @@
+19-jun-2023
+
+How to create theme
+    step-1: To create folder in theme folder
+    step-2: Then create functions.php,style.css,index.php
+    step-3: Then add this code for style and script in functions.php
+            <?php
+            function myfunction(){
+                // die("hello");
+                wp_enqueue_style('my-style',get_stylesheet_directory_uri().'/style.css','','all');
+                wp_enqueue_style('my-bootsrap',"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css",'','all');
+                wp_enqueue_script('js',"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js",'','all');
+                wp_enqueue_script('java',"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js",'','all');
+                wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/jQuery.js', array( 'jquery' ), '1.0', true );
+                wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/a076d05399.js', array(), null, true );
+                
+            } 
+
+            add_action('wp_enqueue_scripts','myfunction');
+            ?>
+
+    step-4: Include wp_head() in body  (It is very important to include css and js from functions.php)
+
+Important Note: In wordpress "$" sign is not compatible so,Instead of $ we use "jQuery"
+
+    step-5: 
+    
+    
